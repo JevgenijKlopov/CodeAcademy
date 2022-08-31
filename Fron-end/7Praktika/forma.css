@@ -1,0 +1,36 @@
+body {
+    background-image: url(https://th.bing.com/th/id/R.a904983f19408a4afdfa6f06275ae424?rik=cGnUsGz0f4BPhg&pid=ImgRaw&r=0);
+    background-size: cover;
+}
+form {
+    display: block;
+    width: 500px;
+    height: 450px;
+    background-color: rgb(219, 219, 219);
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 6px;
+}
+button {
+    margin: 15px 200px;
+    width: 100px;
+    background-color: black;
+    color: white;
+
+}
+input, textarea {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(250, 235, 215, 0.123);
+    border-bottom: 1px solid;
+    
+}
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+label {
+    font-weight: bold;
+}

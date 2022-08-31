@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 500px;
+    height: 25px;
+    background-color: antiquewhite;
+}
+a:not(:first-of-type)::before {
+    content: "//";
+    color: black;
+}

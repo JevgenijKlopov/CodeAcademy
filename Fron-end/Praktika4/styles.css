@@ -1,0 +1,39 @@
+.microsoft-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    word-spacing: 40px;
+    background-color: green;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.desert-main {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+section {
+    background-color: #eee;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+h2 {
+    color: white;
+    text-align: left;
+    background-color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.green-block {
+    padding-top: 10px;
+    background-color: greenyellow;
+}
+p {
+    padding-top: 1px;
+}

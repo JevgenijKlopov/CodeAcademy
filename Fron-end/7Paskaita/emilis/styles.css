@@ -1,0 +1,124 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+.window {
+    max-width: calc(100vw - 250px);
+    margin-left: 250px;
+}
+body {
+    color: rgb(204, 203, 203);
+    height: 100%;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    background-color: #24282c;;
+    width: 250px;
+    height: 100vh;
+    transition-duration: 0.3s;
+}
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    word-spacing: 2rem;
+    padding-left: 10px;
+    padding: 0.67em 0.67em 0;
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.tarpas {
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #353535;
+    margin: 20px;
+}
+a {
+    background-color: transparent;
+    color: rgb(204, 203, 203);
+    text-decoration: none;
+}
+li::marker {
+    font-size: 1rem;
+    color: red;
+
+}
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    font-weight: bold;
+    text-align: left;
+    list-style-type: none;
+    
+}
+.menu {
+    padding: 0;
+}
+ul.active li {
+    list-style-type: circle;
+    font-size: 12px;
+    color: rgb(155, 154, 154);
+    padding-top: 1px;
+    padding-bottom: 8px;
+    font-weight:100;
+    
+
+}
+li.active {
+    list-style-type: disc;
+}
+li:hover::marker{
+    color: red;
+}
+.topheader {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-bottom: 1px solid rgba(151, 149, 149, 0.575);
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.left p {
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+    display: inline;
+}
+span {
+    color: black;
+    font-weight: bold;
+}
+.right a {
+    margin-left: 10px;
+   
+    
+}
+/*.right {
+    margin: 0 0 0 auto;
+    
+    
+}*/
+.list {
+    padding: 20px;
+}
+iframe {
+    width: 100%;
+    height: 450px;
+}
+.title  {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+}
+.genre {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+
+

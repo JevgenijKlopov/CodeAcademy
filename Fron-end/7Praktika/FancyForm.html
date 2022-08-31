@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, textarea {
+            display: block;
+        }
+        input[type="checkbox"] {
+            display: inline;
+        }
+        body {
+            background-color: #6e6e6e;
+            color: white;
+        }
+        span {
+            background-color: #bcfd4c;
+        }
+        .container {
+            text-align: center;
+            width: 40%;
+            height: 455px;
+            margin: 20px auto;
+            border: 1px solid #bcfd4c;
+            box-shadow: 10px 5px 20px #bcfd4c;
+        }
+        h1, p {
+            text-align: center;
+        }
+        input, textarea {
+            margin: 0 auto;
+        }
+        button {
+            display: block;
+            background-color: #bcfd4c;
+            margin: 0 auto;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-top: 15px;
+        }
+        input:valid {
+            border: 2px solid green;
+        }
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register to Fancy Form</h1>
+        <p>All fields are <span>required</span> unless marked as "optional"</p>
+        <form action="">
+            <label for="unique_id">Your unique ID that you can`t change
+                <input type="text" id="unique_id" value="YBX0123" disabled>
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" required>
+            </label>
+            <label for="password">Password:
+                <input type="password" id="password" required>
+            </label>
+            <label for="age">Age:
+                <input type="number" id="age" min="18" max="65" required>
+            </label>
+            <label for="about">Tell us a little about yourself (optional):
+                <textarea name="about" id="about" cols="20" rows="2"></textarea>
+            </label>
+            <label for="agreement">
+                <input type="checkbox" name="agreement"> I agree with the Terms and Conditions
+            </label><br>
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</body>
+</html>

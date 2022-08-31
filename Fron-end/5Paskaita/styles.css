@@ -1,0 +1,45 @@
+img {
+    width: 300px;
+}
+div.main-content { 
+    padding: 20px;
+    width: 40%;
+    border: 2px dotted black;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.24);
+
+}
+
+body {
+    background-color: rgb(77, 3, 37);
+}
+.Headline {
+    color: yellow;
+}
+.sub-headings {
+    color: rgb(102, 26, 26);
+}
+span {
+    font-size: 50px;
+    
+    
+}
+.justify-text {
+    text-shadow: 0 1px 5px rgb(129, 24, 24);
+    
+
+    text-align: justify;
+
+}
+.colorful-border {
+    border-width: 25px;
+    border-style: solid;
+    border-color: blue yellow red green;
+    border-radius: 25px;
+
+}
+img {
+    margin-top: 50px;
+}

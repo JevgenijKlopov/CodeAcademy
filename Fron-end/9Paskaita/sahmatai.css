@@ -1,0 +1,22 @@
+div {
+    width: 50%;
+    display: block;
+    margin: 100px auto;
+}
+tr td {
+    border: 1px solid black;
+    padding: 40px;
+
+}
+td {
+    background-color: white;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: black;
+}
+tr:nth-child(even) td:nth-child(even) {
+    background-color: black;
+}
+
+    

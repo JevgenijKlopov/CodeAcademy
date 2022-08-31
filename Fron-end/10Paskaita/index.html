@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 30%;
+            height: 900px;
+            margin: 0 auto;
+            background-color: #1b1b32;
+            color: #f5f6f7;
+            font-family: Tahoma;
+            font-size: 16px;
+        }
+        button {
+            width: 150px;
+            border-radius: 2px;
+            background-color: rgb(82, 78, 122);
+            margin: 30px 0 0 250px;
+        }
+        label {
+            display: inline;
+            margin: 0 0 0 250px;
+            
+        }
+        fieldset {
+            width: 220px;
+            margin: 0 0 0 250px;
+        }
+        input {
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.233);
+        }
+        input:focus, input:checked {
+            outline: 2px solid yellow;
+        }
+        input:invalid {
+            border: 1px solid red;
+        }
+        input:valid {
+            border: 1px solid green;
+        }
+        select:focus {
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment form</h1>
+    <p>Required fields are followed by *</p>
+    <form action="https://formspree.io/f/xdojkkaz" method="POST">
+        <h2>Contact information</h2>
+        <fieldset>
+            <legend>Title</legend>
+            <input type="radio" id="mister" name="title"> Mister <br>
+            <input type="radio" id="miss" name="title"> Miss
+        </fieldset>
+        <label for="name">Name:*</label>
+        <input type="text" name="name" required><br>
+        <label for="email">Email:*</label>
+        <input type="email" name="email" required><br>
+        <label for="password">Password:*</label>    
+        <input type="password" name="password" required>
+        
+        <h2>Payment information</h2>
+        <label for="card-type">Card type:</label>
+        <select name="card-type" id="">
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+        </select><br>
+        <label for="card-number">Card number: *</label>
+        <input required type="text" minlength="16" maxlength="16" name="card-number"><br>
+        <label for="date">Expiration date:*</label>
+        <input required type="date" name="data"><br>
+        <button type="submit">Validate the payment</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+header {
+    
+    background-color: #010214;
+    width: 100%;
+    height: 342px;
+}
+
+.header-box, #about, .table-content, #contacts {
+    max-width: 50.5%;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#main-header {
+    color: rgb(44, 116, 224);
+    display: block;
+}
+header nav {
+    background-color: #d6b731;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px;
+    word-spacing: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    
+}
+p {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+h2 {
+    padding-top: 20px;
+    
+}
+
+.go-down a {
+    padding: 10px 50px;
+    background-color: rgb(194, 16, 16);
+    margin-left: 42%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    
+}
+.tables {
+    width: 100%;
+    background-color: #021749;
+    padding-bottom: 20px;
+}
+
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    color: white;
+    border: 2px solid red;
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+td:last-child{
+    text-align: right;
+    font-weight: bold;
+
+}
+.table-content h2 {
+    color: white;
+    padding-top: 50px;
+}
+#contacts a {
+    color: #554424;
+    margin-left: 48%;
+}
+footer {
+    width: 100%;
+    height: 65px;
+    background-color: #d6b731;
+    margin-top: 20px;
+}
+footer h2 {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+ul {
+    padding-bottom: 1px;
+}

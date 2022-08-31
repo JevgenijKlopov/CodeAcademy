@@ -1,0 +1,22 @@
+body {
+    font-size: 12px;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    color: blue;
+}
+a.link {
+    color: green;
+}
+p.tekstas {
+    text-align: left;
+
+}
+h1#antraštė span {
+    color: rgb(83, 98, 226);
+}
+p.tekstas span {
+    background-color: rgba(83, 82, 82, 0.377);
+}

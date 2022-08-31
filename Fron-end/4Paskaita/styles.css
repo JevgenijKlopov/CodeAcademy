@@ -1,0 +1,18 @@
+body{
+    padding: 20px;
+}
+img.logo-menu {
+    text-align: left;
+    width: 25%;
+}
+nav.logo-menu {
+    text-align: right;
+    width: 75%;
+}
+.logo-menu {
+    display: inline-block;
+    
+}
+h1 {
+    text-align: center;
+}

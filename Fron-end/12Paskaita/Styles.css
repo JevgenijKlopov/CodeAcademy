@@ -1,0 +1,84 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b8cb21;
+}
+body {
+    background-image: url(https://raw.githubusercontent.com/CodeAcademy-Online/HTML-and-CSS/3922eda97a0ec3265d4417af4b930a8d76e13185/atsakymai/green-office/bg.png);
+}
+.navi {
+    display: flex;
+    align-items: center;
+}
+a {
+    padding-left: 40px;
+    padding-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.logo img {
+    width: 200px;
+}
+.wraper {
+    max-width: 850px;
+    margin: 0 auto;
+}
+.content {
+    padding-top: 20px;
+    background-color: white;
+    display: flex;
+}
+.happy-img {
+    width: 40%;
+    float: left;
+    padding-right: 20px;
+}
+.who {
+    width: 40%;
+    padding-right: 10px;
+}
+.what {
+    width: 60%;
+
+}
+button {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #b8cb21;
+    border: none;
+    color: white;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 40px;
+}
+p {
+    text-align: justify;
+}
+footer p {
+    text-align: center;
+}
+.who p {
+    padding-left: 15px;
+}
+.what p {
+    padding-right: 15px;
+}
+.what button {
+    margin-right: 15px;
+}
+.who h2 {
+    padding-left: 10px;
+}
+button:hover {
+    text-decoration: underline;
+
+}
+a:hover {
+    text-decoration: underline;
+}
