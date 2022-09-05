@@ -15,11 +15,12 @@ header {
     margin: 0 auto;
 }
 .db-logo {
-    width: 500px;
+    width: 50%;
     height: 150px;
 }
 .logo {
-    align-items: center;
+    display: flex;
+    justify-content: center;
     width: 500px;
     height: 150px;
 }
