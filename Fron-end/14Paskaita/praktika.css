@@ -1,0 +1,65 @@
+.content-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+    
+}
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 50%;
+    text-align: center;
+
+}
+
+.grid-item {
+    display: grid;
+    grid-row-gap: 10px;
+    
+}
+.grid-red {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 10px;
+    height: 100px;
+    
+}
+.item1, .grid-item > .item, .grid-red > .item  {
+    background: red;
+}
+.item2, .flex-item2 > .item, .flex-blue > .item {
+    background: rgb(103, 103, 248);
+}
+.grid-item > .item, .grid-item2 > .item {
+    height: 100px;
+}
+
+.flex-content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    text-align: center;
+}
+.flex-content > .item2 {
+    width: 49.5%;
+}
+.flex-item2 {
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+    justify-content: space-between;
+    
+}
+.flex-item2 > .item {
+    height: 45%;
+}
+.flex-blue {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-blue > .item {
+    width: 48.5%;
+    height: 104px;
+}
