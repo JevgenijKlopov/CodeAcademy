@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #eee;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Header css*/
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    height: 190px;
+    margin: 0 auto;
+}
+.logo-img {
+    width: 95px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 105px;
+    font-size: 34px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+}
+a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 18px;
+}
+a:hover {
+    text-decoration:underline
+}
+/* Main css*/
+.main-container {
+    display: grid;
+    grid-template-columns: 20% 78.5%;
+    grid-column-gap: 15px;
+    width: 950px;
+    height: 190px;
+    margin: 0 auto;
+}
+.left-container {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    grid-row-gap: 15px;
+}
+.left-container > div {
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+}
+.login-container, .help-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.content-container {
+    display: flex;
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 40px 20px 20px 30px;
+}
+h1 {
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+/* ooter css*/
+footer {
+    width: 950px;
+    margin: 30px auto;
+    text-align: center;
+    color: gray;
+    
+}
+/*Resolution for mobile*/
+@media screen and (max-width: 500px) and (min-width: 100px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .header {
+        width: 90%;
+    }
+    a {
+        padding-top:  15px;
+        width: 97%;
+        margin: 0;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        color: rgb(129, 191, 250);
+        text-decoration: underline;
+    }
+    a:not(:last-child) {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.158);
+    }
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 145px;
+        width: 90%;
+    }
+    .help-container {
+        display: none;
+    }
+    .login-container {
+        height: 70px;
+    }
+    .content-container {
+        margin-top: -100px;
+    }
+    .footer {
+        width: 90%;
+        margin-top: 50px;
+    }
+    
+}
