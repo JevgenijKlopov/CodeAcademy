@@ -1,0 +1,132 @@
+body {
+    background-color: bisque;
+}
+.keybord {
+    margin: 100px auto;
+    width: 900px;
+    height: 450px;
+    background: black;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo-container > img {
+    width: 100px;
+    height: 50px;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.container, .esc-container {
+    background-color: rgba(0, 0, 0, 0.795);
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(39, 38, 38);
+    justify-content: space-between;
+}
+.formating {
+    padding-left: 5px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 5px;
+    box-shadow: 6px 5px 10px rgb(43, 42, 42), -5px 5px 10px rgb(43, 42, 42);
+}
+.top-right {
+    font-size: 10px;
+    line-height: 15px;
+}
+.flex {
+    display: flex;
+}
+.esc-container {
+    width: 50px;
+    height: 50px;
+}
+.container-size {
+    width: 200px;
+    height: 50px;
+}
+.print-section {
+    width: 150px;
+}
+img {
+    width: 40px;
+    height: 15px;
+}
+.backspace {
+    width: 100px;
+}
+.first-line {
+    margin-top: 40px;
+    padding-left: 0;
+    height: 50px;
+    justify-content: space-around;
+}
+.item {
+    font-size: 13px;
+    line-height: 15px;
+}
+.enter-container > div {
+   width: 820px;
+}
+.enter-button {
+    width: 50px;
+    height: 90px;
+}
+.enter-second-line, .enter-first-line, .shift-row, .ctrl-row {
+    height: 50px;
+}
+.tab {
+    width: 60px;
+    font-size: 13px;
+}
+.caps {
+    width: 70px;
+    font-size: 13px;
+}
+.ent-cont {
+    width: 66px;
+} .shift {
+    width: 50px;
+    font-size: 15px;
+}
+.right-shift {
+    width: 150px;
+    letter-spacing: 2px;
+}
+.shift-row {
+    padding-right: 5px;
+}
+.ctrl {
+    width: 60px;
+}
+.space {
+    width: 350px;
+}
+.btm-line {
+    width: 50px;
+}
+.ctrl-row {
+    padding-right: 5px;
+}
+.win > img {
+    width: 25px;
+    height: 25px;
+}
+.win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover {
+    box-shadow: 6px 5px 10px rgb(199, 104, 104), -5px 5px 10px rgb(199, 104, 104);
+}
