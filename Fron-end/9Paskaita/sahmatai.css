@@ -13,10 +13,37 @@ td {
 }
 
 tr:nth-child(odd) td:nth-child(odd) {
-    background-color: black;
+    background-color: gray;
 }
 tr:nth-child(even) td:nth-child(even) {
-    background-color: black;
+    background-color: gray;
 }
-
+body {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
+.numbers {
+    padding: 10px;
+}
+.numbers > p {
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.side-numbers {
+    display: flex;
+}
+.bottom-side {
+    margin-top: -300px;
+    display: flex;
+    width: 1000px;
+    height: 20px;
+    padding: 75px;
+}
+.bottom-side > p {
+    padding-right: 70px ;
+    font-size: 20px;
+    font-weight: bold;
+}
     

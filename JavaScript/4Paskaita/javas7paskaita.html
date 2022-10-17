@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="first-number"></label>
+    <label for="second-number"></label>
+    <input type="number" id="first-number">
+    <input type="number" id="second-number">
+    <button id="sum">sum</button>
+    <button id="sub">sub</button>
+    <button id="div">div</button>
+    <button id="mul">mul</button>
+    <button id="mod">mod</button>
+    <button id="clear">Clear</button>
+    <p class="result"></p>
+    <script>
+        const firstNumber = document.querySelector("#first-number");
+        const secondNumber = document.querySelector("#second-number");
+        const paragraph = document.querySelector(".result");
+        const clear = document.querySelector("#clear");
+        const sum = document.querySelector("#sum");
+        const sub = document.querySelector("#sub");
+        const div = document.querySelector("#div");
+        const mul = document.querySelector("#mul");
+        const mod = document.querySelector("#mod");
+        sum.addEventListener("click", () =>   myResult("sum"));
+        sub.addEventListener("click", () => {
+            paragraph.innerText = +firstNumber.value - +secondNumber.value;
+        });
+        div.addEventListener("click", () => {
+            paragraph.innerText = +firstNumber.value / +secondNumber.value;
+        });
+        mul.addEventListener("click", () => {
+            paragraph.innerText = +firstNumber.value * +secondNumber.value;
+        });
+        // mod.addEventListener("click", () => {
+        //     paragraph.innerText = +firstNumber.value % +secondNumber.value;
+        // });
+        // mod.addEventListener("click", myFunction);
+        // function myFunction() {
+        //     paragraph.innerText = +firstNumber.value % +secondNumber.value;
+        // }
+       const myFunction = () => {paragraph.innerText = +firstNumber.value % +secondNumber.value;}
+       mod.addEventListener("click", myFunction);
+       clear.addEventListener("click", () => {
+            firstNumber.value = "";
+            secondNumber.value = "";
+            paragraph.innerText = "";
+       });
+       function calck(value) {
+        const n1 = +firstNumber.value;
+        const n2 = +secondNumber.value;
+        switch(value){
+        case "sum":
+            return n1 + n2;
+        case "sub":
+            return n1 - n2;
+        case "div":
+            return n1 / n2;
+        case "mul":
+            return n1 * n2;
+        case "mod":
+            return n1 % n2;
+        }
+       }
+       function myResult(value) {
+        paragraph.innerText = "Rezultatas:" + calck(value);
+       }
+        </script>
+</body>
+</html>
