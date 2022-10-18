@@ -13,23 +13,29 @@ myForm.addEventListener("submit", (event) => {
     console.log(myName)
 })
 function nameValidation(inputElement) {
-    if (inputElement.value === "") {
-        inputElement.parentNode.querySelector("small").innerText = "Fail";
-
-    } else {
-        inputElement.parentNode.querySelector("small").innerText = "Succsess";
+    if (!hasValue(inputElement)) {
+        return false;
     }
-    return inputElement.value !== "";
+    // if (inputElement.value === "") {
+    //     inputElement.parentNode.querySelector("small").innerText = "Fail";
+    // } else {
+    //     inputElement.parentNode.querySelector("small").innerText = "Succsess";
+    // }
+    // return inputElement.value !== "";
+    showMessage(inputElement.parentNode, "Done")
+    return true;
 }
 function validateEmail(email) {
-    if (!hasValue(email)) {
-        return false;
-     }
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!hasValue(email)) {
+         return false;
+     }
     if (!re.test(email.value)) {
-        email.parentNode.querySelector("small").innerText = "Fail";
+        // email.parentNode.querySelector("small").innerText = "Fail";
+        showMessage(email.parentElement, "Invalid Email");
     } else {
-        email.parentNode.querySelector("small").innerText = "Succsess";
+        // email.parentNode.querySelector("small").innerText = "Succsess";
+        showMessage(email.parentElement, "Done");
     }
     return re.test(email.value);
 }
@@ -38,6 +44,7 @@ function hasValue(inputElement) {
         showMessage(inputElement.parentNode, "Laukas yra privalomas")
         return false;
     }
+        return true;
 }
 function showMessage(parentElement, msg) {
     parentElement.querySelector("small").innerText = msg;
