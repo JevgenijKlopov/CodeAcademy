@@ -1,6 +1,4 @@
 import { fetchData, postData } from "./src/crud.js";
-(()=>{
-    fetchData().then(data => displayData(data))})();
 function displayData(tasks){
     const taskContainer = document.querySelector(".tasks");
     let taskDiv = "";
@@ -12,8 +10,30 @@ function displayData(tasks){
         <span class="options">
             <i class="fas fa-edit"></i>
             <i class="fas fa-trash-alt"></i>
-        </span>
-        </div>`
-    });
-    taskContainer.innerHTML = taskDiv;
-}
+            </span>
+            </div>`
+        });
+        taskContainer.innerHTML = taskDiv;
+    }
+    const formEl = document.querySelector("form");
+    formEl.onsubmit = async (event) => {
+        event.preventDefault();
+        const textInput = document.querySelector("#task").value;
+        if(textInput === ""){
+            const errorDiv = document.querySelector(".error");
+            errorDiv.textContent = "Privalomas laukas";   
+        }else{
+            const descriptionInput = document.querySelector("#description").value;
+            const dateInput = document.querySelector("#date").value;
+            const data = {
+                text: textInput,
+                date: dateInput,
+                description: descriptionInput,
+                id: Math.floor(Math.random()*1000 + 1),
+            }
+            postData(data).then(item => displayData(item))
+        }
+    }
+
+
+    (()=>{fetchData().then(data => displayData(data))})();
