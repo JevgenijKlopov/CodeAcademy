@@ -35,5 +35,5 @@ function displayData(tasks){
         }
     }
 
-
+    
     (()=>{fetchData().then(data => displayData(data))})();
