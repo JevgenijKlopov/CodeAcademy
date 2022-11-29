@@ -3,7 +3,7 @@ function displayData(tasks){
     const taskContainer = document.querySelector(".tasks");
     let taskDiv = "";
     tasks.forEach(task => {
-        taskDiv += `<div>
+        taskDiv += `<div class="task_div">
         <h2>${task.text}</h2>
         <h3>${task.date}</h3>
         <p>${task.description}</p>
@@ -35,5 +35,5 @@ function displayData(tasks){
         }
     }
 
-    
+
     (()=>{fetchData().then(data => displayData(data))})();
