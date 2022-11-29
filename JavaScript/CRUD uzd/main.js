@@ -1,4 +1,4 @@
-import { fetchData } from "./src/crud.js";
+import { fetchData, postData } from "./src/crud.js";
 (()=>{
     fetchData().then(data => displayData(data))})();
 function displayData(tasks){

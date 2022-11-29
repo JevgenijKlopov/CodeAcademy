@@ -10,3 +10,20 @@ export const fetchData = async () => {
       console.error(error);
     }
   }
+  export const postData = async (data) => {
+    try{
+        const response = await fetch(dataApi+"/data", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                Accept: "application/json",
+                'Content-Type': 'application/json',
+            }
+        });
+        if(response.ok){
+            return await response.json()
+        }
+    }catch (error) {
+        console.log(error)
+    }
+  }
