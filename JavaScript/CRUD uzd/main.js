@@ -61,13 +61,13 @@ formEl.onsubmit = async (event) => {
         } else {
             editMode = false;
             const id = document.querySelector(".modal-title > span").textContent; 
-            const updatetData = {
+            const updatedData = {
                 text: textInput.value,
                 date: dateInput.value,
                 description: descriptionInput.value,
                 id: id,
             }
-            updateData(updatetData).then(item=>displayData(item))
+            updateData(updatedData).then(item=>displayData(item))
         }
     }
 }
