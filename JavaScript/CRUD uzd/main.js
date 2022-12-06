@@ -17,6 +17,8 @@ function displayData(tasks) {
             <i class="fas fa-trash-alt"></i>
             </span>
             </div>`
+            const modalId = document.querySelector(".modal-title");
+            modalId.innerHTML = `Prideti uzduoti`;
     });
     taskContainer.innerHTML = taskDiv;
 
@@ -65,7 +67,7 @@ formEl.onsubmit = async (event) => {
                 text: textInput.value,
                 date: dateInput.value,
                 description: descriptionInput.value,
-                id: id,
+                id: +id,
             }
             updateData(updatedData).then(item=>displayData(item))
         }
